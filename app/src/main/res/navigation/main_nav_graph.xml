@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/JokesFragment">
+
+    <fragment
+        android:id="@+id/JokesFragment"
+        android:name="com.emissa.apps.jokesapp.views.MainFragment"
+        android:label="JokesFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_JokesFragment_to_SearchForJokes"
+            app:destination="@id/SearchForJokes" />
+        <action
+            android:id="@+id/action_JokesFragment_to_JokesListFragment"
+            app:destination="@id/JokesListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchForJokes"
+        android:name="com.emissa.apps.jokesapp.views.SearchJokesFragment"
+        android:label="SearchJokes"
+        tools:layout="@layout/fragment_search_jokes" />
+
+    <fragment
+        android:id="@+id/JokesListFragment"
+        android:name="com.emissa.apps.jokesapp.views.JokesListFragment"
+        android:label="AllJokes"
+        tools:layout="@layout/fragment_jokes_list" />
+</navigation>

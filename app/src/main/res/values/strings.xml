@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JokesApp</string>
+    <string name="random_joke_btn">Random Joke</string>
+    <string name="search_joke_btn">Search Joke per Author</string>
+    <string name="jokes_list">Jokes List</string>
+    <string name="search_hint">Enter Joke\'s Author Full name</string>
 </resources>
