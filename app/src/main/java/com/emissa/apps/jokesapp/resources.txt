@@ -1,0 +1,10 @@
+Material design resources to work on UI later
+
+https://material.io/design/shape/applying-shape-to-ui.html#shape-attributes
+https://material.io/develop/android/theming/shape
+https://material.io/design/shape/about-shape.html#shape-customization-tool
+
+UI design templates:
+
+https://designshack.net/articles/inspiration/sketch-ios-app-templates/
+https://elements.envato.com/music-mobile-app-ux-and-ui-kit-VLWGJT4?irgwc=1&clickid=XXj0SpWe%3AxyITRkwvnyqZRxtUkGQmCRRuSRbU40&iradid=298927&utm_campaign=elements_af_84779&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Compact%20Creative

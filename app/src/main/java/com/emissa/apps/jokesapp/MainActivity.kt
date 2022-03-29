@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
+    /**
+     * TODO
+     * have a welcome view instructing the user on what the app does and how to use it
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
