@@ -1,6 +1,8 @@
 package com.emissa.apps.jokesapp.di
 
-import com.emissa.apps.jokesapp.network.JokesService
+import com.emissa.apps.jokesapp.rest.JokeRepository
+import com.emissa.apps.jokesapp.rest.JokeRepositoryImpl
+import com.emissa.apps.jokesapp.rest.Services
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -14,11 +16,11 @@ class NetworkModule {
     @Provides
     fun provideNetworkService(okHttpClient: OkHttpClient) =
         Retrofit.Builder()
-            .baseUrl(JokesService.BASE_URL)
+            .baseUrl(Services.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
-            .create(JokesService::class.java)
+            .create(Services::class.java)
 
     @Provides
     fun providesOkHttpClient() =
@@ -30,4 +32,8 @@ class NetworkModule {
             .readTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
             .build()
+
+    @Provides
+    fun provideJokeRepository(services: Services): JokeRepository =
+        JokeRepositoryImpl(services)
 }

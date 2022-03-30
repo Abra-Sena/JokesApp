@@ -1,4 +1,4 @@
-package com.emissa.apps.jokesapp.network
+package com.emissa.apps.jokesapp.rest
 
 import com.emissa.apps.jokesapp.model.Joke
 import com.emissa.apps.jokesapp.model.Jokes
@@ -14,7 +14,7 @@ interface JokeRepository {
 }
 
 class JokeRepositoryImpl(
-    private val jokeServices: JokesService
+    private val jokeServices: Services
 ): JokeRepository {
     override suspend fun getRandomJoke(): Response<Joke> {
         return jokeServices.getRandomJoke()

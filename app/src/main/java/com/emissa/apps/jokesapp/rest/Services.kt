@@ -1,4 +1,4 @@
-package com.emissa.apps.jokesapp.network
+package com.emissa.apps.jokesapp.rest
 
 import com.emissa.apps.jokesapp.model.Joke
 import com.emissa.apps.jokesapp.model.Jokes
@@ -7,7 +7,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-sealed interface JokesService {
+sealed interface Services {
     // Fetching a random joke -> http://api.icndb.com/jokes/random
     @GET(RANDOM_JOKE)
     suspend fun getRandomJoke(): Response<Joke>
