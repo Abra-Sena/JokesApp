@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_side_margin"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
-        android:id="@+id/random_joke_view"
+        android:id="@+id/joke_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:text="45"/>
+    <TextView
+        android:id="@+id/joke_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="start"
+        android:text="This is the joke's view"/>
+    <TextView
+        android:id="@+id/joke_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Joke's category"/>
 
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/random_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:contentDescription="Image illustration" />
+
+    </LinearLayout>
 </androidx.cardview.widget.CardView>
