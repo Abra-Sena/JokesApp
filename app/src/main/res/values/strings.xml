@@ -4,4 +4,5 @@
     <string name="search_joke_btn">Search Joke per Author</string>
     <string name="jokes_list">Jokes List</string>
     <string name="search_hint">Enter Joke\'s Author Full name</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

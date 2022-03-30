@@ -13,13 +13,6 @@
         android:orientation="vertical">
 
     <TextView
-        android:id="@+id/joke_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:gravity="center_horizontal"
-        android:text="45"/>
-    <TextView
         android:id="@+id/joke_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,13 +25,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:text="Joke's category"/>
-
-    <ImageView
-        android:id="@+id/random_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:contentDescription="Image illustration" />
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>

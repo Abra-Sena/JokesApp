@@ -77,6 +77,7 @@ class JokeViewModel(
     }
 
     private fun <T> checkResponse(response: Response<T>, message: String) {
+        // think about using inline function for this
         try {
             if (response.isSuccessful) {
                 response.body()?.let {

@@ -7,11 +7,11 @@ import com.google.gson.annotations.SerializedName
 
 @Entity
 data class Joke(
-    @SerializedName("categories")
-    val categories: List<String>,
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @SerializedName("id")
-    val id: Int,
+    val id: Int = 0,
     @SerializedName("joke")
-    val joke: String
+    val joke: String,
+    @SerializedName("categories")
+    val categories: List<String>? = emptyList()
 )

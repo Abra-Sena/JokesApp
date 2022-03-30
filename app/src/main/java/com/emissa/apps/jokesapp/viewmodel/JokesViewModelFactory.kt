@@ -8,7 +8,9 @@ import javax.inject.Inject
 class JokesViewModelFactory @Inject constructor(
     private val jokeRepo: JokeRepository
 ): ViewModelProvider.Factory {
+
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return JokeViewModel(jokeRepo) as T
     }
+
 }
