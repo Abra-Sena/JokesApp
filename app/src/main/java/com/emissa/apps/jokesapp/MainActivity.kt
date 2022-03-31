@@ -3,6 +3,8 @@ package com.emissa.apps.jokesapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.emissa.apps.jokesapp.databinding.ActivityMainBinding
 import com.emissa.apps.jokesapp.viewmodel.JokeViewModel
 import com.emissa.apps.jokesapp.viewmodel.JokesViewModelFactory
@@ -31,5 +33,9 @@ open class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         JokesApp.jokesComponent.inject(this)
+
+        val navController = findNavController(R.id.main_fragment_container)
+        setupActionBarWithNavController(navController)
     }
+
 }

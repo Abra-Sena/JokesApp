@@ -16,7 +16,7 @@ class ApplicationModule(
     private val applicationContext: Context
 ) {
     @Provides
-    fun provideContext() : Context { return applicationContext }
+    fun provideContext() : Context = applicationContext
 
     @Provides
     fun provideConnectivityManager(context: Context): ConnectivityManager =

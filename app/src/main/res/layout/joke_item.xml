@@ -7,11 +7,6 @@
     app:cardElevation="@dimen/card_elevation"
     app:cardCornerRadius="@dimen/card_corner_radius">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <TextView
         android:id="@+id/joke_view"
         android:layout_width="match_parent"
@@ -19,11 +14,4 @@
         android:layout_marginTop="@dimen/margin_medium"
         android:gravity="start"
         android:text="This is the joke's view"/>
-    <TextView
-        android:id="@+id/joke_category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:text="Joke's category"/>
-    </LinearLayout>
 </androidx.cardview.widget.CardView>

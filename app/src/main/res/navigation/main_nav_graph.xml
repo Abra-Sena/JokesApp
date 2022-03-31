@@ -10,12 +10,13 @@
         android:name="com.emissa.apps.jokesapp.views.MainFragment"
         android:label="JokesFragment"
         tools:layout="@layout/fragment_main" >
+
         <action
-            android:id="@+id/action_JokesFragment_to_SearchForJokes"
-            app:destination="@id/SearchForJokes" />
-        <action
-            android:id="@+id/action_JokesFragment_to_JokesListFragment"
+            android:id="@+id/action_MainFragment_to_JokesListFragment"
             app:destination="@id/JokesListFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_SearchForJokes"
+            app:destination="@id/SearchForJokes" />
     </fragment>
 
     <fragment

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.RandomJokeFragment">
+
+    <TextView
+        android:id="@+id/random_joke_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/random_joke_view"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+</FrameLayout>

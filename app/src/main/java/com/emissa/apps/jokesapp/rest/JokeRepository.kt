@@ -5,7 +5,7 @@ import com.emissa.apps.jokesapp.model.Jokes
 import retrofit2.Response
 
 
-interface JokeRepository {
+interface JokeRepository { // constructor injection for the repo impl?
     suspend fun getRandomJoke(): Response<Joke>
     suspend fun changeMainCharacter(firstName: String, lastName: String): Response<Joke>
     suspend fun getMultipleRandomJokes(jokesCount: Int): Response<Jokes>
